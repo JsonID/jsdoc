@@ -1,14 +1,26 @@
 <html>
 <head>
 <title>js插件编写</title>
+<style type="text/css">
+  	#mask{width:100%;height:100%;position:absolute;top:0;left:0;z-index:1000;background-color:gray;opacity:0.5;filter:alpha(opacity=50);}
+	
+	#pic-show-main{width:200px;height:200px;position:absolute;left:50%;margin-left:-100px;top:50px;}
+	#pic-img{width:100%;height:100%;}
+	.pic-nav{width:40%;height;100%;position:absolute;top:0;}
+	.nav-left{left:0;}
+	.nav-right{right:0;}
+	
+	#pic-bottom{width:100%;height:20%;position:absolute;left:0;bottom:0;}
+</style>
+
 </head>
 <body>
   <div id="mask"></div>
-  <div id="show-main">
-      <img src="" />
-      <div class="pic-nav"><</div>
-      <div class="pic-nav">></div>
-      <div class="pic-bottom">
+  <div id="pic-show-main">
+      <img id="pic-img" src="" />
+      <div class="pic-nav nav-left"><</div>
+      <div class="pic-nav nav-right">></div>
+      <div id="pic-bottom">
         <div id="pic-title"></div>
         <div id="pic-desc"></div>
       </div>
